@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>        
+    <div id="quiz-container">
+        <div id="question-counter">1 / 50</div>
+        <div id="question"></div>
+        <ul id="choices">
+        </ul>
+        <button id="submit-answer-button" disabled>Submit Answer</button>
+        <button id="next-question-button" style="display: none;">Next Question</button>
+        <button id="finish-button" style="display: none;">Finish</button>
+        <div id="feedback"></div>
+        <div id="score">Correct answers: 0</div> 
+    </div>
+
+
+    <div id="final-score-card" style="display: none;">
+        <div class="card">
+            <h1>Congratulations!</h1>
+            <p id="correct-answers">Correct Answers: <span></span></p>
+            <p id="final-score">Final Score: <span></span></p>
+            <p id="final-grade">Grade: <span></span> / 10</p>
+            <button id="view-results-button">View Results</button>
+        </div>
+    </div>
+    
+    <div id="results-container" style="display: none;"></div>
+
+    <script src="../javascript/quiz.js"></script>
+</body>
+</html>
